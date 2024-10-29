@@ -1,35 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta https-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Validação Javascript</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Central de links Faveni Morumbi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <body>
-        <h1>Formulário de Validação</h1>
+<body>
+    <header>
+        <nav>
+            <img src="unifaveniLogo.png" alt="Logo" class="logo">
+            <div class="button-list">
+                <ul>
+                    <li><a href="#SOFTWARES" class="button">SOFTWARES</a></li>
+                    <li><a href="#AVA" class="button">AVA</a></li>
+                    <li><a href="#VESTIBULARES" class="button">VESTIBULARES</a></li>
+                    <li><a href="#POLOS" class="button">POLOS</a></li>
+                    <li><a href="#INSTITUCIONAIS" class="button">INSTITUCIONAIS</a></li>
+                    <li><a href="#TICKET" class="button">REPORT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <form method="post" action="" name="formulario-contato" id="whatsappForm" >
+    <section id="Bem-vindo">
+        <h1><STRONG>CENTRAL DE LINKS UNIFAVENI MORUMBI </STRONG></h1>
+    </section>
+    <section id="GEOGUIA" >
+        <div class="formulario">
+            <h2 class="title2">BUSCADOR DE POLOS</h2>
+            <label for="cidade" class="cidade1">Digite o nome da cidade:</label>
+            <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+            <button onclick="buscar()">Localizar</button>
+            <p id="resultado"></p>
+            <a href="https://docs.google.com/spreadsheets/d/164D-CJM408op7kAfmE3KwKN24eqg7FTvrnZj5wlW_qI/edit?usp=sharing" target="_blank">CIDADES E POLOS NÃO ENCONTRADOS</a>
+        </div>
+    </section>
 
-            <input type="text" name="nome" placeholder="Nome completo" required>
-    
-            <input type="date" name="birthdate"  required>
-    
-            <input type="text" name="cpf" placeholder="CPF" required>
-    
-            <input type="email" name="email" placeholder="E-mail:" required>
-    
-            <input type="text" name="rg" placeholder="RG:" required>
-    
-            <input type="text" name="address" placeholder="Endereço atual:" required>
-    
-            <input type="text" name="cep" placeholder="CEP do endereço:" required>
-    
-            <input type="text" name="city" placeholder="Cidade de nascimento" required>
-    
-            <button type="submit">Enviar</button>
+    <section id="SOFTWARES" >
+        <h2 class="title">SOFTWARES</h2>
+        <ul class="quick-links2">
+            <li><a href="https://gfmorumbi.bitrix24.com.br/" target="_blank">BITRIX24</a></li>
+            <li><a href="https://agente.sonax.net.br/login" target="_blank">SONAX</a></li>
+            <li><a href="https://www.venichat.ai/conversa" target="_blank">VENICHAT</a></li>
+            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiZDM3MTc5ODAtMjRiYS00ZmEzLTk0M2UtYzI0OWY4ZTdiYjg3IiwidCI6IjBlYWViYmJjLTY1NjktNDE4Ny04YWFhLTM4N2I2MzgxZGJiZSJ9" target="_blank">POWER BI</a></li>
+            <li><a href="https://universa.unifaveni.com.br/matricula/acadgeral-aluno" target="_blank">UNIVERSA UNIFAVENI</a></li>
+            <li><a href="https://universa.domalberto.com.br/acesso/bem-vindo" target="_blank">UNIVERSA DOM ALBERTO</a></li>
+            <li><a href="https://universa.abeu.edu.br/acesso/bem-vindo" target="_blank">UNIVERSA UNIABEU</a></li>
+            <li><a href="https://grupofavenitimrb.freshdesk.com/support/tickets/389" target="_blank">TICKET TI</a></li>
+            <li><a href="https://byelinux.github.io/buscador/" target="_blank">BUSCADOR</a></li>
+            <li><a href="https://byelinux.github.io/fv/" target="_blank">GEOGUIA</a></li>
+
+        </ul>
+    </section>
+
+    <section id="AVA">
+        <h2 class="title">PORTAIS AVA</h2>
+        <ul class="quick-links">
+            <li><a href="https://ava.unifaveni.com.br/wp-login.php?redirect_to=https%3A%2F%2Fava.unifaveni.com.br%2F" target="_blank">PORTAL AVA <br> 2° LICENCIATURA</a></li>
+            <li><a href="https://ava.saude.unifaveni.com.br/wp-login.php?redirect_to=https%3A%2F%2Fava.saude.unifaveni.com.br%2F" target="_blank"> PORTAL <br> AVA SAÚDE</a></li>
+            <li><a href="https://ava.pos.unifaveni.com.br/wp-login.php" target="_blank"> PORTAL AVA <br>PÓS-GRADUAÇÃO</a></li>
+            <li><a href="https://ava.ead.unifaveni.com.br/wp-login.php?redirect_to=https%3A%2F%2Fava.ead.unifaveni.com.br%2F" target="_blank"> PORTAL AVA GRADUAÇÃO</a></li>
+        </ul>
+    </section>
+
+    <section id="VESTIBULARES">
+        <h2 class="title">VESTIBULARES</h2>
+        <ul class="quick-links2">
+            <li><a href="https://universa.unifaveni.com.br/vestibular" target="_blank">Universa Unifaveni - Vestibular</a></li>
+            <li><a href="https://universa.abeu.edu.br/vestibular/v2/selecao-inscricao/index" target="_blank">Universa uniAbeu - Vestibular</a></li>
+        </ul>
+    </section>
+
+    <section id="POLOS">
+        <h2 class="title">POLOS</h2>
+        <ul class="quick-links">
+            <li><a href="https://docs.google.com/spreadsheets/d/1MqD8RDqtfw6XMpsYdBeeypElFvJi-ixBPp2U-do7-Yw/edit?gid=2071583196#gid=2071583196" target="_blank"><br><br><img src="sheets.png" alt="sheets" class="link-image">POLOS</a></li>
+            <li><a href="https://grupofaveni.com.br/polos/" target="_blank"><br><br><img src="sheets.png" alt="sheets" class="link-image">POLOS SITE</a></li>
+        </ul>
+    </section>
+
+    <section id="INSTITUCIONAIS">
+        <h1 class="title">INSTITUCIONAIS</h1>
+        <ul class="quick-links">
+            <li><a href="https://unifaveni.com.br/" target="_blank"><br><img src="unifaveniLogo.png" alt="Unifaveni" class="link-image">ACESSO AO INSTITUCIONAL UNIFAVENI</a></li>
+            <li><a href="https://domalberto.edu.br/" target="_blank"><br><img src="domalberto.png" alt="Dom Alberto" class="link-image">ACESSO AO INSTITUCIONAL DOM ALBERTO</a></li>
+            <li><a href="https://faveni.edu.br/" target="_blank"><br><img src="fv.png" alt="Faveni" class="link-image">ACESSO AO INSTITUCIONAL FAVENI</a></li>
+            <li><a href="https://uniabeu.edu.br/" target="_blank"><br><img src="uniabeu.png" alt="Uniabeu" class="link-image">ACESSO AO INSTITUCIONAL UNIABEU</a></li>
+
+
+        </ul>
+    </section>
+
+    <section id="SOFTWARES">
+        <h1 class="title">ONBOARDING</h1>
+        <ul class="quick-links2">
+
+            <a href="https://docs.google.com/document/d/16YlQ0Y9-khUWTJH34KrN3COMMeXejHAsQJH0997AwQY/edit?tab=t.0" target="_blank">TREINAMENTO FAVENI</a>
+
+            <a href="https://docs.google.com/document/d/1IIcsr9rPmPnTAUiX_NivqmPccqj-s3TsWRCeSRWk_og/edit?copiedFromTrash&tab=t.0" target="_blank" download="ONBOARDING" class="link-image">ONBOARDING</a>
+
+        </ul>
+    </section>
+
+
+    <section id="TICKET">
+        <h2 class="title2">CONTATO</h2>
+        <form id="contact-form">
+            <label for="name"></label><input type="text" id="name" name="name" required placeholder="Nome Completo">
+            <label for="email"></label><input type="email" id="email" name="email" required placeholder="Email"> 
+            <label for="message"></label><textarea id="message" name="message" required placeholder="Mensagem"></textarea>
+            <div class="btn"><button type="submit">Enviar</button></div>
         </form>
-    </body>
+    </section>
+
+    <div id="p-footer">
+        <p>&copy; Developed by Diego Avila and Gabriel Santos. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
